@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<!-- 
+	action: where the form sends data to 
+	method: what HTTP method (get/post) 
+	<form action = "" method = ""> 
+	labels important for making sites accessible for screen impaired users
+	name adds data in the form of a query string -->
+
+	<!-- Two ways of using labels: 
+	<form action="https://wikipedia.org" method="GET">
+		<label>
+			Username:
+			<input type="text" placeholder="username">
+		</label>
+		<label>
+			Password:
+			<input name="password" type="password" placeholder="password">
+		</label>
+		<input type="submit">
+	</form> -->
+
+	<form action="https://wikipedia.org" method="GET">
+		<label for="username">Username:</label>
+		<!-- required validates that an input is not empty -->
+		<!-- type validations: email-make sure format is correct-->
+		<input id="username" type="text" placeholder="username" required>
+		<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="password" required>
+		<input type="submit">
+	</form>
+</body>
+</html>
